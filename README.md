@@ -1,86 +1,22 @@
 # Pandas-Challenge
 Homework 4 - Pandas Northwestern University Boot Camp
 
-### District Summary
+For this challenge, we were asked to create 8 data frames which displayed a:
 
-Create a high-level snapshot, in a DataFrame, of the district's key metrics, including the following:
+* District Summary
+* School Summary
+* The 5 Highest Performing Schools
+* The 5 Worst Performing Schools
+* Math Scores By Grade
+* Reading Scores By Grade
+* Scores By School Spending
+* Scores By School Size
+* Scores By School Type
 
-* Total schools
-* Total students
-* Total budget
-* Average math score
-* Average reading score
-* % passing math (the percentage of students who passed math)
-* % passing reading (the percentage of students who passed reading)
-* % overall passing (the percentage of students who passed math AND reading)
+It was a daunting challenge, but enjoyable nonetheless! My single file of code successfully read through 2 spreadsheets provided and was also able to provide the 8 data frames with their corresponding calculations. 
 
-### School Summary
+While looking at the results of my console, it seems that there is likely not much correlation with school budgets and resulting scores. I observed that the top and bottom performing schools had a very different set of budgets, so it is not possible to conclude that budget has anything to do with increased performance.
 
-Create a DataFrame that summarizes key metrics about each school, including the following:
+However, when looking at the DataFrame showing the budget per student as well as the one by school size, both tend to show higher scores the lower the size and budget. This is a very shallow overview of the DataFrame as I didn't draw any statistical calculations, such as r values, that could tell more about the correlation between scores, size, and per student budget.
 
-* School name
-* School type
-* Total students
-* Total school budget
-* Per student budget
-* Average math score
-* Average reading score
-* % passing math (the percentage of students who passed math)
-* % passing reading (the percentage of students who passed reading)
-* % overall passing (the percentage of students who passed math AND reading)
-
-### Highest-Performing Schools (by % Overall Passing)
-
-Create a DataFrame that highlights the top 5 performing schools based on % Overall Passing. Include the following metrics:
-
-* School name
-* School type
-* Total students
-* Total school budget
-* Per student budget
-* Average math score
-* Average reading score
-* % passing math (the percentage of students who passed math)
-* % passing reading (the percentage of students who passed reading)
-* % overall passing (the percentage of students who passed math AND reading)
-
-
-### Lowest-Performing Schools (by % Overall Passing)
-
-Create a DataFrame that highlights the bottom 5 performing schools based on % Overall Passing. Include the following metrics:
-
-* School name
-* School type
-* Total students
-* Total school budget
-* Per student budget
-* Average math score
-* Average reading score
-* % passing math (the percentage of students who passed math)
-* % passing reading (the percentage of students who passed reading)
-* % overall passing (the percentage of students who passed math AND reading)
-
-### Math Scores by Grade
-
-Create a DataFrame that lists the average math score for students of each grade level (9th, 10th, 11th, 12th) at each school.
-
-### Reading Scores by Grade
-
-Create a DataFrame that lists the average reading score for students of each grade level (9th, 10th, 11th, 12th) at each school.
-
-### Scores by School Spending
-
-Create a table that breaks down school performance based on average spending ranges (per student). Use your judgment to create four bins with reasonable cutoff values to group school spending. Include the following metrics in the table:
-
-* Average math score
-* Average reading score
-* % passing math (the percentage of students who passed math)
-* % passing reading (the percentage of students who passed reading)
-* % overall passing (the percentage of students who passed math AND reading)
-
-### Scores by School Size
-
-Create a table that breaks down school performance based on school size (small, medium, or large).
-### Scores by School Type
-
-Create a table that breaks down school performance based on type of school (district or charter).
+Lastly, when looking at the DataFrame showing the school types and scores, it is evident that there is a disparaging difference in scores between those schools that are Charter Schools, and those that are District Schools. This is mainly noted in the percentage passing scores for reading, math, and especially those of the overall passing scores. In this instance, there was an almost 40% difference between the overall passing scores between the two school types, Charter Schools with the higher score at ~90%
